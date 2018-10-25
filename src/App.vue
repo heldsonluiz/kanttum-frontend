@@ -29,6 +29,7 @@ export default {
 </script>
 
 <style lang="stylus">
+
 *
   box-sizing border-box
   margin 0
