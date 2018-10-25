@@ -44,7 +44,7 @@ export default {
 @media (max-width: 720px)
   .breadcrumbs
     flex-wrap wrap-reverse
-    padding 0 20px
+    padding 0 20px 10px
 
     &__title,
     &__timer
