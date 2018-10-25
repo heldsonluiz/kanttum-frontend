@@ -1,9 +1,9 @@
 <template>
   <div class="topbar">
-    <fa icon="arrow-left" class="icon-big"/>
+    <span class="icon icon--big ico-left-arrow"></span>
     <div class="topbar__title">UNA-01-2018</div>
-    <fa icon="book-reader" class="icon-big"/>
-    <fa icon="ellipsis-v" class="icon-big"/>
+    <span class="icon icon--big ico-reader"></span>
+    <span class="icon icon--big ico-show-more"></span>
   </div>
 </template>
 

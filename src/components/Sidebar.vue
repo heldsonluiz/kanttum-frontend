@@ -14,7 +14,7 @@
         <div class="item__title">
           {{item.title}}
           <span v-show="item.status === 'ok'" class="item__icon">
-            <fa icon="check" class="icon-medium"/>
+            <span class="icon icon--medium ico-tick"></span>
           </span>
         </div>
         <div class="item__description">
@@ -66,7 +66,6 @@ export default {
 .sidebar
   background-color #f5f5f5
   box-shadow inset -1px 0 0 0 #eeeeee
-  height 100%
   padding 0 20px 0
   width 240px
 
