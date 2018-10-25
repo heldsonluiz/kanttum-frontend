@@ -16,7 +16,7 @@
       <label for="comentario">
         Deixe seu comentário
       </label>
-      <textarea name="comentario" v-model="message"></textarea>
+      <textarea name="comentario" v-model="message" maxlength="1000"></textarea>
       <div class="comentario__detalhes">
         <div class="comentario__detalhes--error">
           <span v-show="this.message.length < 4">
@@ -130,7 +130,6 @@ export default {
   box-shadow 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2)
   display flex
   flex-wrap wrap
-  height 585px
   justify-content center
   margin 20px auto
   padding 20px
@@ -208,4 +207,13 @@ export default {
   text-align center
   text-transform uppercase
   width 100%
+
+@media (max-width: 640px)
+  .container
+    width 100%
+
+  .comentario
+    &__detalhes
+      &--count
+        width 150px
 </style>

@@ -98,8 +98,6 @@ export default {
     boder-right 2px solid #00af7e
     box-shadow inset 0 -1px 0 0 #eeeeee, inset -2px 0 0 0 #00af7e
     display block
-    height 118px
-    width 240px
 
   &__list-item--selected .item__title
     color #00af7e
@@ -115,4 +113,8 @@ export default {
     font-size 14px
     font-weight 500
     line-height 1.29em
+
+@media (max-width: 640px)
+  .sidebar
+    width 100%
 </style>

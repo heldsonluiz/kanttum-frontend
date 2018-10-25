@@ -23,7 +23,6 @@ export default {
   box-shadow inset 0 -3px 0 0 #eeeeee
   color #757575
   display flex
-  height 64px
   justify-content space-between
   padding 20px
   width 100%
@@ -42,4 +41,13 @@ export default {
     span
       padding-left 16px
 
+@media (max-width: 720px)
+  .breadcrumbs
+    flex-wrap wrap-reverse
+    padding 0 20px
+
+    &__title,
+    &__timer
+      margin 10px 0
+      width 100%
 </style>

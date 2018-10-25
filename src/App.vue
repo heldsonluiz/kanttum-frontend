@@ -36,8 +36,9 @@ export default {
 
 #app
   font-family 'Varela Round', sans-serif
-  -webkit-font-smoothing antialiased
+  min-width 360px
   -moz-osx-font-smoothing grayscale
+  -webkit-font-smoothing antialiased
 
 .app
   &__main
@@ -57,5 +58,10 @@ export default {
     font-size 20px!important
   &.icon--medium
     font-size 14px!important
+
+@media (max-width: 640px)
+  .app
+    &__content
+      width 100%
 
 </style>
