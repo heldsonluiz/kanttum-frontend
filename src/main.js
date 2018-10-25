@@ -8,11 +8,12 @@ import {
   faArrowLeft,
   faEllipsisV,
   faBookReader,
-  faCheck
+  faCheck,
+  faStarHalfAlt
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faCoffee, faArrowLeft, faEllipsisV, faBookReader, faCheck)
+library.add(faCoffee, faArrowLeft, faEllipsisV, faBookReader, faCheck, faStarHalfAlt)
 
 Vue.component('fa', FontAwesomeIcon)
 

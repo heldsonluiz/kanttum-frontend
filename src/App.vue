@@ -4,18 +4,21 @@
     <section class="app__main">
       <sidebar></sidebar>
       <section class="app__content">
+        <breadcrumbs></breadcrumbs>
       </section>
     </section>
   </div>
 </template>
 
 <script>
+import Breadcrumbs from './components/Breadcrumbs'
 import Sidebar from '@/components/Sidebar'
 import Topbar from '@/components/Topbar'
 
 export default {
   name: 'app',
   components: {
+    Breadcrumbs,
     Sidebar,
     Topbar
   }
