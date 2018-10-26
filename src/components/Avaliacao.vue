@@ -66,14 +66,12 @@ export default {
   methods: {
     ...mapActions([
       'setRating',
-      'setMessage',
-      'setSubmitStatus'
+      'setMessage'
     ]),
 
     ...mapGetters([
       'getRating',
-      'getMessage',
-      'getSubmitStatus'
+      'getMessage'
     ]),
 
     submit () {
@@ -98,8 +96,8 @@ export default {
             return response.data.fields
           })
           .then(avaliation => {
-            this.setRating(avaliation.value.integerValue)
-            this.setMessage(avaliation.value.stringValue)
+            this.rating = 0
+            this.message = ''
             setTimeout(window.alert('Avaliação enviada com sucesso'), 1000)
           })
           .catch(e => {
@@ -207,6 +205,10 @@ export default {
   text-align center
   text-transform uppercase
   width 100%
+
+@media (max-width: 880px)
+  .container
+    box-shadow none
 
 @media (max-width: 640px)
   .container

@@ -6,7 +6,7 @@ A tela possui uma interação: o envio da avaliação para a API. Após concluir
 
 OBS. Como forma de ajudar a entender o problema em caso de erro, o sistema também realiza o 'log' do erro no console do navegador
 
-
+[Publicado no Heroku](https://kanttum-frontend.herokuapp.com/)
 
 ## Project setup
 ```
@@ -26,4 +26,9 @@ npm run build
 ### Lints and fixes files
 ```
 npm run lint
+```
+
+### Run express server (for Heroku app use)
+```
+node server.js
 ```
